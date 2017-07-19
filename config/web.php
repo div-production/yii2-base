@@ -46,6 +46,9 @@ $config = [
                 '<action>' => 'site/<action>',
             ],
         ],
+        'assetManager' => [
+            'appendTimestamp' => true,
+        ],
     ],
     'modules' => [
         'ycm' => [
