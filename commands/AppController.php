@@ -17,14 +17,10 @@ use yii\console\Controller;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class HelloController extends Controller
+class AppController extends Controller
 {
-    /**
-     * This command echoes what you have entered as the message.
-     * @param string $message the message to be echoed.
-     */
-    public function actionIndex($message = 'hello world')
+    public function actionPassword($password)
     {
-        echo $message . "\n";
+        echo md5($password . 'f93jx5axt5') . "\n";
     }
 }
