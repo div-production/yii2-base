@@ -72,6 +72,8 @@ $config = [
     'aliases' => [
         '@uploadPath' => dirname(__DIR__) . '/web/uploads', // @webroot isn't available yet (@webroot/uploads).
         '@uploadUrl' => '/uploads', // @web isn't available yet (@web/uploads).
+        '@bower' => '@vendor/bower-asset',
+        '@npm'   => '@vendor/npm-asset',
     ],
     'params' => $params,
 ];
